@@ -1,0 +1,25 @@
+{
+  "name": "xiaoku-companion-skill",
+  "version": "1.0.0",
+  "description": "Zero-dependency local virtual friend & companion Agent Skill (with SQLite FTS5 memory, custom renaming, colloquial weather, and SHA-256 memory capsule export/import).",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "bin": {
+    "xiaoku-companion": "./scripts/companion.mjs"
+  },
+  "scripts": {
+    "test": "node --test --test-isolation=none ./test/companion-skill.test.mjs",
+    "status": "node ./scripts/companion.mjs status"
+  },
+  "keywords": [
+    "agent-skill",
+    "companion",
+    "mcp",
+    "xiaoku",
+    "virtual-friend",
+    "sqlite-memory"
+  ]
+}
